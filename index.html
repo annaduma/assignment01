@@ -6,10 +6,22 @@
   </head>
   <body>
 
-    <label>Task Description
-      <textarea name="Decribe the task"></textarea>
-    </label>
+  <h1>To Do List</h1>
 
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+
+  <form>
+    <label>Describe the task
+      <input type="text"></input>
+    </label>
+  </form>
+
+  <form>
     <fieldset>
       <legend>Who is responsible for this task?</legend>
         <label>Anna</label>
@@ -19,14 +31,16 @@
         <label>Mr. Binks</label>
           <input type="radio" name="task_assignment" vaule="Mr. Binks"></input>
     </fieldset>
+  </form>
 
-<label for="task_difficulty">How difficult is the task?</label>
+  <form>
+    <label for="task_difficulty">How difficult is the task?</label>
     <select name="task_difficulty" id="task_difficulty">
       <option value="easy">Easy</option>
       <option value="medium">Medium</option>
       <option value="hard">Difficult</option>
     </select>
-
+  </form>
 
   </body>
 </html>
