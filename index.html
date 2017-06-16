@@ -6,5 +6,27 @@
   </head>
   <body>
 
+    <label>Task Description
+      <textarea name="Decribe the task"></textarea>
+    </label>
+
+    <fieldset>
+      <legend>Who is responsible for this task?</legend>
+        <label>Anna</label>
+          <input type="radio" name="task_assignment" value="Anna"></input>
+        <label>Alex</label>
+          <input type="radio" name="task_assignment" value="Alex"></input>
+        <label>Mr. Binks</label>
+          <input type="radio" name="task_assignment" vaule="Mr. Binks"></input>
+    </fieldset>
+
+<label for="task_difficulty">How difficult is the task?</label>
+    <select name="task_difficulty" id="task_difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Difficult</option>
+    </select>
+
+
   </body>
 </html>
