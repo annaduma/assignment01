@@ -3,10 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>ToDo App</title>
+    <script type="text/javascript" src="array.js"></script>
   </head>
   <body>
 
   <h1>To Do List</h1>
+
+  <form name="submit" onsubmit="submitButton()">
+
+    <fieldset id="person">
+      <legend>Who is responsible for this task?</legend>
+        <label>Anna</label>
+          <input type="radio" name="taskAssignment" value="Anna" required>
+        <label>Alex</label>
+          <input type="radio" name="taskAssignment" value="Alex">
+        <label>Mr. Binks</label>
+          <input type="radio" name="taskAssignment" value="Mr. Binks">
+    </fieldset>
+
+    <label>How difficult is the task?</label>
+    <select id="difficulty" required>
+      <option value="">None</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Difficult</option>
+    </select><br>
+
+    <label>Describe the task:
+      <input id="description" type="text" required>
+    </label>
+    
+    <button type="submit">Add to My List!</button>
+  </form>
+
+
 
   <ul>
     <li></li>
@@ -14,33 +44,8 @@
     <li></li>
   </ul>
 
+  <div id="list"></div>
 
-  <form>
-    <label>Describe the task
-      <input type="text"></input>
-    </label>
-  </form>
-
-  <form>
-    <fieldset>
-      <legend>Who is responsible for this task?</legend>
-        <label>Anna</label>
-          <input type="radio" name="task_assignment" value="Anna"></input>
-        <label>Alex</label>
-          <input type="radio" name="task_assignment" value="Alex"></input>
-        <label>Mr. Binks</label>
-          <input type="radio" name="task_assignment" vaule="Mr. Binks"></input>
-    </fieldset>
-  </form>
-
-  <form>
-    <label for="task_difficulty">How difficult is the task?</label>
-    <select name="task_difficulty" id="task_difficulty">
-      <option value="easy">Easy</option>
-      <option value="medium">Medium</option>
-      <option value="hard">Difficult</option>
-    </select>
-  </form>
 
   </body>
 </html>
