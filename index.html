@@ -11,38 +11,35 @@
 
   <form name="submit" onsubmit="submitButton()">
 
-    <fieldset id="person">
-      <legend>Who is responsible for this task?</legend>
-        <label>Anna</label>
-          <input type="radio" name="taskAssignment" value="Anna" required>
-        <label>Alex</label>
-          <input type="radio" name="taskAssignment" value="Alex">
-        <label>Mr. Binks</label>
-          <input type="radio" name="taskAssignment" value="Mr. Binks">
-    </fieldset>
+  <div>
+    <label>Who is responsible for this task?</label>
+      <label>Anna
+        <input type="radio" name="taskAssignment" value="Anna" required>
+      </label>
+      <label>Alex
+        <input type="radio" name="taskAssignment" value="Alex">
+      </label>
+      <label>Mr. Binks
+        <input type="radio" name="taskAssignment" value="Mr. Binks">
+      </label>
+    </div>
+
 
     <label>How difficult is the task?</label>
     <select id="difficulty" required>
-      <option value="">None</option>
+      <option value="">Select One</option>
       <option value="easy">Easy</option>
       <option value="medium">Medium</option>
-      <option value="hard">Difficult</option>
+      <option value="hard">Hard</option>
     </select><br>
 
     <label>Describe the task:
       <input id="description" type="text" required>
     </label>
-    
+
     <button type="submit">Add to My List!</button>
   </form>
 
-
-
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
 
   <div id="list"></div>
 
